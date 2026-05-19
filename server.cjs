@@ -6,7 +6,7 @@ const helmet = require('helmet');
 const morgan = require('morgan');
 
 const app = express();
-const PORT = process.env.PORT || 5174; // Match existing port
+const PORT = process.env.PORT || 3001;
 const dbPath = path.join(__dirname, 'database', 'tasks.db');
 const db = new sqlite3.Database(dbPath);
 
